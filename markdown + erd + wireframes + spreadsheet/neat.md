@@ -1,21 +1,23 @@
 **neat**
 
-This application will track the details of our (now 9 year old) whiskey club. The ultimate goal is to increase excitement and encourage more
+This application will track the details of our (now 9 year old) whiskey club. The ultimate goal is to increase excitement and encourage more events to take place.
 
-Specifically it will feature the following:
+Specifically the site it will feature the following:
 
-- display the data points of each whiskey we try 
-- allow members to make their own tasting notes
-- details whiskeys and member attendence at each event
-- keeps track of membership details
-- offer password-protection, as the club is for members only
+- displays the data points of each whiskey we sample 
+- allows members to make their own tasting notes
+- details whiskeys tried and member attendence at each event
+- keeps track of membership contact details
+- offers password protection, as the club is for members only
 
 
 **User Stories**
 
-Members will visit the site to review the details of whiskeys I've tasted.
+Members will visit the site to review the details of whiskeys they've tasted.
 
-Members will visit the site to make comments on the whiskeys and to comment on other member's comments I've tasted at Events.
+Members will visit the site to make comments on the whiskeys they've tried and to comment on other member's comments.
+
+Members will visit the site to view photos from events.
 
 The administrator will visit the site to enter new whiskeys as new events take place.
 
@@ -28,7 +30,7 @@ The application will be comprised of four models:
 
 **Event** - will detail each event and which whiskeys were sampled
 
-**Whiskey** - will detail each whiskey
+**Whiskey** - will detail the relevant data points of each whiskey: type, region, country, price, abv, etc
 
 **Comment** - will allow each member to make his individual tasting notes available to the rest of the group
 
@@ -43,7 +45,7 @@ The first shows the Home page.
 
 The second shows the Whiskey All page.
 
-The third shows an individual Whiskey page.
+The third shows an individual Whiskey detail page.
 
 
 
