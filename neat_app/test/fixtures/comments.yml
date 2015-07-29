@@ -2,6 +2,10 @@
 
 one:
   comment: MyString
+  member_id: 
+  whiskey_id: 
 
 two:
   comment: MyString
+  member_id: 
+  whiskey_id: 

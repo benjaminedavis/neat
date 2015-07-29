@@ -3,7 +3,6 @@ class CreateWhiskeys < ActiveRecord::Migration
     create_table :whiskeys do |t|
       t.string :name
       t.string :region
-      t.string :string
       t.string :country
       t.string :type
       t.string :malt
@@ -11,8 +10,7 @@ class CreateWhiskeys < ActiveRecord::Migration
       t.integer :price
       t.float :abv
       t.string :pic1
-      t.string :event
-      t.string :references
+      t.references :event, index: true, foreign_key: true
       t.references :member, index: true, foreign_key: true
 
       t.timestamps null: false

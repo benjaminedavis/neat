@@ -1,0 +1,18 @@
+
+<%= form_for @post do |f|%>
+<div>Title: <%= f.text_field :title %></div>
+<div>Body: <%= f.text_area :body %></div>
+<div> <%= f.submit "Add Post" %></div>
+<% end %>
+
+<%= form_for @whiskey do |f| %>
+<div>NAME: <%= f.text_field :name %></div>
+<div>REGION: <%= f.text_field :region %></div>
+<div>COUNTRY: <%= f.text_field :country %></div>
+<div>TYPE: <%= f.text_field :wtype %></div>
+<div>MALT: <%= f.text_field :malt %></div>
+<div>AGE: <%= f.number_field :age %></div>
+<div>PRICE: $<%= f.number_field :price %></div>
+<div>ABV: <%= f.number_field :abv %></div>
+<div> <%= f.submit "Add Whiskey" %></div>
+<% end %>

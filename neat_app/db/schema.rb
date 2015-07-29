@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150729001827) do
+ActiveRecord::Schema.define(version: 20150729210549) do
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "comment"
+    t.integer  "member_id"
+    t.integer  "whiskey_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "comments", ["member_id"], name: "index_comments_on_member_id"
+  add_index "comments", ["whiskey_id"], name: "index_comments_on_whiskey_id"
 
   create_table "event_members", force: :cascade do |t|
     t.integer  "event_id"
@@ -41,5 +52,24 @@ ActiveRecord::Schema.define(version: 20150729001827) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
+
+  create_table "whiskeys", force: :cascade do |t|
+    t.string   "name"
+    t.string   "region"
+    t.string   "country"
+    t.string   "wtype"
+    t.string   "malt"
+    t.integer  "age"
+    t.integer  "price"
+    t.float    "abv"
+    t.string   "pic1"
+    t.integer  "event_id"
+    t.integer  "member_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "whiskeys", ["event_id"], name: "index_whiskeys_on_event_id"
+  add_index "whiskeys", ["member_id"], name: "index_whiskeys_on_member_id"
 
 end

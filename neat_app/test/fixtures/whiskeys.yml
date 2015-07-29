@@ -3,7 +3,6 @@
 one:
   name: MyString
   region: MyString
-  string: MyString
   country: MyString
   type: 
   malt: MyString
@@ -11,14 +10,12 @@ one:
   price: 1
   abv: 1.5
   pic1: MyString
-  event: MyString
-  references: MyString
+  event_id: 
   member_id: 
 
 two:
   name: MyString
   region: MyString
-  string: MyString
   country: MyString
   type: 
   malt: MyString
@@ -26,6 +23,5 @@ two:
   price: 1
   abv: 1.5
   pic1: MyString
-  event: MyString
-  references: MyString
+  event_id: 
   member_id: 
