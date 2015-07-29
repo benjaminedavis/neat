@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  region: MyString
+  string: MyString
+  country: MyString
+  type: 
+  malt: MyString
+  string: MyString
+  age: MyString
+  integer: MyString
+  price: 1
+  abv: MyString
+  float: MyString
+  pic1: MyString
+  member_id: 
+
+two:
+  name: MyString
+  region: MyString
+  string: MyString
+  country: MyString
+  type: 
+  malt: MyString
+  string: MyString
+  age: MyString
+  integer: MyString
+  price: 1
+  abv: MyString
+  float: MyString
+  pic1: MyString
+  member_id: 

@@ -1,0 +1,53 @@
+    /*font-family: "Courier New", Courier, monospace;
+    font-weight: bold;*/
+
+
+#logo {
+    float: left;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 70px;
+    font-weight: bold;
+    color: #F1C232;
+}
+
+.navbar {
+  width: 100%;
+  float: right;
+}
+
+.navbar li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 15px 0px 15px;
+  display: inline;
+  list-style: none;
+}
+
+#sectionon {
+    color: #F1C232;
+}
+
+/*.whiskeypicstats {
+    display: inline-block;
+    vertical-align: top;
+}*/
+
+#whiskeypic {
+    padding: 15px 15px 15px 15px;
+    width:350px;
+    height:450px;
+    overflow:hidden;
+}
+
+#stats {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#comments {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
