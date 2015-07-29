@@ -7,13 +7,12 @@ one:
   country: MyString
   type: 
   malt: MyString
-  string: MyString
-  age: MyString
-  integer: MyString
+  age: 1
   price: 1
-  abv: MyString
-  float: MyString
+  abv: 1.5
   pic1: MyString
+  event: MyString
+  references: MyString
   member_id: 
 
 two:
@@ -23,11 +22,10 @@ two:
   country: MyString
   type: 
   malt: MyString
-  string: MyString
-  age: MyString
-  integer: MyString
+  age: 1
   price: 1
-  abv: MyString
-  float: MyString
+  abv: 1.5
   pic1: MyString
+  event: MyString
+  references: MyString
   member_id: 

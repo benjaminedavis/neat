@@ -7,13 +7,12 @@ class CreateWhiskeys < ActiveRecord::Migration
       t.string :country
       t.string :type
       t.string :malt
-      t.string :string
-      t.string :age
-      t.string :integer
+      t.integer :age
       t.integer :price
-      t.string :abv
-      t.string :float
+      t.float :abv
       t.string :pic1
+      t.string :event
+      t.string :references
       t.references :member, index: true, foreign_key: true
 
       t.timestamps null: false
