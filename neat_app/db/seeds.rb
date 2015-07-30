@@ -1,8 +1,4 @@
-Member.destroy_all
-Event.destroy_all
-EventMember.destroy_all
-Whiskey.destroy_all
-Comment.destroy_all
+
 
 Member.create(first_name:"Andy", last_name:"Rackaskaus", email:"andrewrackauskas@yahoo.com", password: "testpass")
 Member.create(first_name:"Ben", last_name:"Davis", email:"benjaminedavis@gmail.com", password: "testpass")
@@ -25,24 +21,24 @@ Member.create(first_name:"John", last_name:"McLean", email:"jm@gmail.com", passw
 Member.create(first_name:"Ed", last_name:"Vigdor", email:"ev@gmail.com", password: "testpass")
 Member.create(first_name:"Brian", last_name:"Patrick", email:"brianpatrickw@gmail.com", password: "testpass")
 
-Event.create(date:"05/20/06", host: "Andy Rackaskaus", theme: "The Inception!", description: "Single Malt Scotch")
-Event.create(date:"07/15/06", host: "Kevin Robie", description: "Single Malt Scotch")
-Event.create(date:"11/11/06", host: "Andy Rackaskaus", description: "Single Malt Scotch")
-Event.create(date:"03/17/07", host: "Andy Rackaskaus", theme: "St. Patrick's Day!", description: "Irish Whiskey")
-Event.create(date:"06/09/07", host: "Andy Rackaskaus", description: "Single Malt Scotch")
-Event.create(date:"09/20/08", host: "Kevin Robie", description: "Single Malt Scotch")
-Event.create(date:"02/28/09", host: "Andy Rackaskaus", description: "Single Malt Scotch")
-Event.create(date:"05/09/09", host: "John McLean", description: "Single Malt Scotch")
-Event.create(date:"09/26/09", host: "Brian Walsh", description: "Single Malt Scotch")
-Event.create(date:"02/20/10", host: "Andy Rackaskaus", theme: "President's Day!", description: "American Whiskey")
-Event.create(date:"10/22/11", host: "Andy Rackaskaus", description: "Single Malt Scotch")
-Event.create(date:"02/19/12", host: "Andy Rackaskaus", description: "Single Malt Scotch")
-Event.create(date:"07/28/12", host: "Andy Rackaskaus", theme: "American Whiskey!", description: "American Whiskey")
-Event.create(date:"04/13/13", host: "Andy Rackaskaus", description: "Single Malt Scotch")
-Event.create(date:"07/14/13", host: "Andy Rackaskaus", description: "Single Malt Scotch")
-Event.create(date:"11/02/13", host: "Andy Rackaskaus", theme: "Free For All!", description: "All Whiskey Types")
-Event.create(date:"01/25/14", host: "Andy Rackaskaus", theme: "Free For All!", description: "All Whiskey Types")
-Event.create(date:"04/25/15", host: "Andy Rackaskaus", theme: "Free For All!", description: "All Whiskey Types")
+Event.create(date:"2006-05-20", host: "Andy Rackaskaus", theme: "The Inception!", description: "Single Malt Scotch")
+Event.create(date:"2006-07-15", host: "Kevin Robie", description: "Single Malt Scotch")
+Event.create(date:"2006-11-11", host: "Andy Rackaskaus", description: "Single Malt Scotch")
+Event.create(date:"2007-03-17", host: "Andy Rackaskaus", theme: "St. Patrick's Day!", description: "Irish Whiskey")
+Event.create(date:"2007-06-09", host: "Andy Rackaskaus", description: "Single Malt Scotch")
+Event.create(date:"2008-09-20", host: "Kevin Robie", description: "Single Malt Scotch")
+Event.create(date:"2009-02-28", host: "Andy Rackaskaus", description: "Single Malt Scotch")
+Event.create(date:"2009-05-09", host: "John McLean", description: "Single Malt Scotch")
+Event.create(date:"2009-09-26", host: "Brian Walsh", description: "Single Malt Scotch")
+Event.create(date:"2010-02-20", host: "Andy Rackaskaus", theme: "President's Day!", description: "American Whiskey")
+Event.create(date:"2011-10-22", host: "Andy Rackaskaus", description: "Single Malt Scotch")
+Event.create(date:"2012-02-19", host: "Andy Rackaskaus", description: "Single Malt Scotch")
+Event.create(date:"2012-07-28", host: "Andy Rackaskaus", theme: "American Whiskey!", description: "American Whiskey")
+Event.create(date:"2013-04-13", host: "Andy Rackaskaus", description: "Single Malt Scotch")
+Event.create(date:"2013-07-14", host: "Andy Rackaskaus", description: "Single Malt Scotch")
+Event.create(date:"2013-11-02", host: "Andy Rackaskaus", theme: "Free For All!", description: "All Whiskey Types")
+Event.create(date:"2014-01-25", host: "Andy Rackaskaus", theme: "Free For All!", description: "All Whiskey Types")
+Event.create(date:"2015-04-25", host: "Andy Rackaskaus", theme: "Free For All!", description: "All Whiskey Types")
 
 EventMember.create(event_id: 1, member_id: 1, attended: true)
 EventMember.create(event_id: 1, member_id: 2, attended: true)

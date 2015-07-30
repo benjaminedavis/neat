@@ -1,41 +1,48 @@
 Rails.application.routes.draw do
-  root  'whiskey#index'
 
-  get 'sessions/new'
+  root 'whiskeys#index'
 
-  get 'sessions/create'
+  resources :whiskeys, only: [:index, :new, :create, :show]
+  resources :events, only: [:index, :new, :create, :show]
+  resources :comments, only: [:create, :edit, :destroy]
+  resources :members, only: [:index, :new, :create, :show]
+  resources :sessions, only: [:new, :create, :destroy]
 
-  get 'sessions/destroy'
+  # get 'whiskey#new'
 
-  get 'member/index'
-
-  get 'member/new'
-
-  get 'member/show'
-
-  get 'member/create'
-
-  get 'comment/create'
-
-  get 'comment/edit'
-
-  get 'comment/destroy'
-
-  get 'event/index'
-
-  get 'event/new'
-
-  get 'event/create'
-
-  get 'event/show'
-
-  get 'whiskey/index'
-
-  get 'whiskey/new'
-
-  get 'whiskey/create'
-
-  get 'whiskey/show'
+  # get 'sessions/new'
+  #
+  # get 'sessions/create'
+  #
+  # get 'sessions/destroy'
+  #
+  # get 'member/index'
+  #
+  # get 'member/new'
+  #
+  # get 'member/show'
+  #
+  # get 'member/create'
+  #
+  # get 'comment/create'
+  #
+  # get 'comment/edit'
+  #
+  # get 'comment/destroy'
+  #
+  # get 'event/index'
+  #
+  # get 'event/new'
+  #
+  # get 'event/create'
+  #
+  # get 'event/show'
+  #
+  # get 'whiskey/index'
+  #
+  # get 'whiskey/create'
+  #
+  # get 'whiskey/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def current_member
-    @current_member ||= Memberer.find session[:member_id] if session[:member_id]
+    @current_member ||= Member.find session[:member_id] if session[:member_id]
   end
 
 end

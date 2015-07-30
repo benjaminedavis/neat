@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID: </th>
+      <th>FIRST NAME: </th>
+      <th>LAST NAME: </th>
+      <th>EMAIL: </th>
+      <th>EVENTS: </th>
+      <th>WHISKEYS: </th>
+      <th> </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @member.each do |x| %>
+    <tr>
+      <td><div><%= x.id %></div></td>
+      <td><div><%= x.first_name %></div></td>
+      <td><div><%= x.last_name %></div></td>
+      <td><div><%= x.email %></div></td>
+      <td><div><%= %></div></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
