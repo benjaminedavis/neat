@@ -1,30 +1,10 @@
 // Place all the styles related to the whiskey controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  padding-top: 120px;
-}
-
-#logo {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 70px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #F1C232;
-    margin-right:100px;
-}
-
-.barnav {
-  font-family: "Courier New", Courier, monospace;
-  color: black;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
-}
 
 #whiskeypic {
-    padding: 15px 15px 15px 15px;
-    width:350px;
-    height:450px;
+    padding: 10px 10px 10px 10px;
+    width:250px;
+    height:350px;
     overflow:hidden;
 }

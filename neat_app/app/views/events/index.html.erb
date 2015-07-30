@@ -1,7 +1,7 @@
 <table class="table">
   <thead>
     <tr>
-      <th>EVENT #: </th>
+      <th>EVENT: </th>
       <th>DATE: </th>
       <th>HOST: </th>
       <th>THEME: </th>
@@ -13,7 +13,7 @@
   <tbody>
     <% @events.each do |x| %>
     <tr>
-      <td><div><%= x.id %></div></td>
+      <td><div><%= link_to "#{x.id}", event_path(x) %></div></td>
       <td><div><%= x.date %></div></td>
       <td><div><%= x.host %></div></td>
       <td><div><%= x.theme %></div></td>

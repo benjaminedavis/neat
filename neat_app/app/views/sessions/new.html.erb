@@ -1,2 +1,19 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="wrap">
+        <p class="form-title">
+          announce<br>yourself</p>
+          
+        <form class="login">
+          <%= form_for Member.new, url: sessions_path do |f| %>
+          <input placeholder="you sir, name?" type="text" <%= f.text_field :email %> />
+          <input placeholder="the password is" type="password" <%= f.password_field :password %> />
+          <input class="btn btn-warning btn-sm" type="submit" value="enter neat" <%= f.submit %> />
+          <%end%>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

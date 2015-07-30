@@ -1,20 +1,25 @@
 
+  <div class="whiskeypic" ><%= image_tag(@whiskey.pic1, :alt => "Photo Not Available") %></div>
 
+    <div class="whiskeydesc" >
+      <div>NAME: <%= @whiskey.name %></div>
+      <div>REGION: <%= @whiskey.region %></div>
+      <div>COUNTRY: <%= @whiskey.country %></div>
+      <div>TYPE: <%= @whiskey.wtype %></div>
+      <div>MALT: <%= @whiskey.malt %></div>
+      <div>AGE: <%= @whiskey.age %></div>
+      <div>PRICE: $<%= @whiskey.price %></div>
+      <div>ABV: <%= @whiskey.abv %></div>
+      <div>EVENT: <%= @whiskey.event.date %></div>
+      <div>MEMBER: <%= @whiskey.member.first_name %> <%= @whiskey.member.last_name %></div>
+    </div>
 
-<% @whiskey.id do |x| %>
-<div id="whiskeypic" ><%= x.pic1 %></div>
-<div><%= image_tag("/images/lagavulin16", :alt => "Promo Not Available") %></div>
+<!-- this section should show all comments from this whiskey id -->
+    <div class="whiskeycomments">
+      <%# @whiskey.comment.each do |x| %>
+      <div><%#= x.member_id %></div>
+      <div><%#= x.comment %></div>
+      <%# end %>
+    </div>
 
-<div class="" >
-  <div>NAME: <%= x.name %></div>
-  <div>REGION: <%= x.region %></div>
-  <div>COUNTRY: <%= x.country %></div>
-  <div>TYPE: <%= x.wtype %></div>
-  <div>MALT: <%= x.malt %></div>
-  <div>AGE: <%= x.age %></div>
-  <div>PRICE: $<%= x.price %></div>
-  <div>ABV: <%= x.abv %></div>
-  <div>EVENT: <%= x.event_id %></div>
-  <div>MEMBER: <%= x.member_id %></div>
-</div>
-<% end %>
+<!-- this section will allow users to make new comments -->

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'whiskeys#index'
+  root 'sessions#new'
 
   resources :whiskeys, only: [:index, :new, :create, :show]
   resources :events, only: [:index, :new, :create, :show]

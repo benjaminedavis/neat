@@ -14,5 +14,26 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets"
-@import "bootstrap"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 100px;
+}
+
+#logo {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 65px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F1C232;
+    margin-right:100px;
+}
+
+.barnav {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
