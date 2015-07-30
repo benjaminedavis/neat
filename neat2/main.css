@@ -1,25 +1,26 @@
     /*font-family: "Courier New", Courier, monospace;
     font-weight: bold;*/
 
-
 #logo {
     float: left;
     font-family: "Courier New", Courier, monospace;
     font-size: 70px;
     font-weight: bold;
+    text-decoration: none;
     color: #F1C232;
 }
 
 .navbar {
   width: 100%;
   float: right;
+  text-decoration: none;
 }
 
 .navbar li {
   font-family: "Courier New", Courier, monospace;
   font-size: 28px;
   font-weight: bold;
-  padding: 10px 15px 0px 15px;
+  padding: 0px 15px 0px 15px;
   display: inline;
   list-style: none;
 }
@@ -50,4 +51,17 @@
     font-family: "Courier New", Courier, monospace;
     font-size: 20px;
     font-weight: bold;
+}
+
+#whiskeyallstats {
+    display: inline;
+}
+
+.wastats {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0px 15px 0px 15px;
+  display: inline;
+  list-style: none;
 }
