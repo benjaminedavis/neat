@@ -18,6 +18,7 @@ class WhiskeysController < ApplicationController
 
   def show
     @whiskey = Whiskey.find(params[:id])
+    @comment = Comment.new
   end
 
 private

@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'sessions#new'
 
+  post '/whiskeys/:id' => 'comments#create'
+
   resources :whiskeys, only: [:index, :new, :create, :show]
   resources :events, only: [:index, :new, :create, :show]
   resources :comments, only: [:create, :edit, :destroy]

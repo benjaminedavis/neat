@@ -1,12 +1,15 @@
 class CommentsController < ApplicationController
 
 def create
-    @whiskey = Whiskey.find(params[:whiskey_id])
+    @whiskey = Whiskey.find(params[:id])
     @comment = @whiskey.comments.create(comment_params)
     @comment.member = current_member
-    @comment.save
-    redirect_to whiskey_path(@comment.whiskey)
-  end
+    if @comment.save
+      redirect_to whiskey_path(@whiskey)
+    else
+      redirect_to root_path
+    end
+end
 
 def edit
 end
@@ -16,7 +19,7 @@ end
 
 private
   def comment_params
-    params.require(:comment).permit(:body)
+    params.require(:comment).permit(:comment)
   end
 
 end

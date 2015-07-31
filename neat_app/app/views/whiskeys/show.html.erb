@@ -1,32 +1,56 @@
-
-<div class="picanddesc">
-  <div class="whiskeypic" ><%= image_tag(@whiskey.pic1, :alt => "Photo Not Available") %></div>
-
-    <div class="whiskeydesc" >
-      <div>NAME: <%= @whiskey.name %></div>
-      <div>REGION: <%= @whiskey.region %></div>
-      <div>COUNTRY: <%= @whiskey.country %></div>
-      <div>TYPE: <%= @whiskey.wtype %></div>
-      <div>MALT: <%= @whiskey.malt %></div>
-      <div>AGE: <%= @whiskey.age %></div>
-      <div>PRICE: $<%= @whiskey.price %></div>
-      <div>ABV: <%= @whiskey.abv %></div>
-      <div>EVENT: <%= @whiskey.event.date %></div>
-      <div>MEMBER: <%= @whiskey.member.first_name %> <%= @whiskey.member.last_name %></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <div class="whiskeypic" ><%= image_tag(@whiskey.pic1, :alt => "Photo Not Available") %></div>
     </div>
 
-</div>
-<!-- this section should show all comments from this whiskey id -->
-    <div class="whiskeycomments">
-      <%# @whiskey.comment.each do |x| %>
-      <div><%#= x.member_id %></div>
-      <div><%#= x.comment %></div>
-      <%# end %>
+    <div class="col-md-7">
+      <div class="whiskeydesc" >
+        <div>NAME: <%= @whiskey.name %></div>
+        <div>REGION: <%= @whiskey.region %></div>
+        <div>COUNTRY: <%= @whiskey.country %></div>
+        <div>TYPE: <%= @whiskey.wtype %></div>
+        <div>MALT: <%= @whiskey.malt %></div>
+        <div>AGE: <%= @whiskey.age %></div>
+        <div>PRICE: $<%= @whiskey.price %></div>
+        <div>ABV: <%= @whiskey.abv %></div>
+        <div>EVENT: <%= @whiskey.event.date %></div>
+        <div>MEMBER: <%= @whiskey.member.first_name %> <%= @whiskey.member.last_name %></div>
+      </div>
+
+      <div class="whiskeycomments">
+        <% @whiskey.comments.each do |x| %>
+        <div><%= x.member_id %></div>
+        <div><%= x.comment %></div>
+        <% end %>
+      </div>
+
+      <div class="whiskeynewcomment pull-right">
+      <br>
+
+        <%= form_for @comment, url: whiskey_path(@whiskey.id) do |f| %>
+        <%= f.label :comment  %>
+        <%= f.text_field :comment %>
+        <%= f.submit 'Add A Comment', class: 'btn btn-success btn-sm' %>
+        <% end %>
+      </div>
+
+
     </div>
 
-<div class="whiskeynewcomment">
-<br>
-<div class="enterbutton"><button type="submit" class="btn btn-success btn-sm">Add A Comment</button></div>
+  </div>
 
+
+  <div class="picanddesc">
+
+
+
+
+
+
+
+  </div>
+  <!-- this section should show all comments from this whiskey id -->
+
+  <!-- this section will allow users to make new comments -->
 </div>
-<!-- this section will allow users to make new comments -->
