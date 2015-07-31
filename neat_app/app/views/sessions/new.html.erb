@@ -1,8 +1,13 @@
-<div><%= form_tag sessions_path do %></div>
-<div><%= label_tag "you sir, name?" %></div>
-<div><%= text_field_tag :email, params[:email] %></div>
-<div><%= label_tag "the password is" %></div>
-<div><%= password_field_tag :password %></div>
-<br>
-<div class="enterbutton"><button type="submit" class="btn btn-warning btn-sm">enter neat</button></div>
-<% end %>
+<div class="loginmod">
+  <div class="welcome"><h1>announce yourself</div></h2>
+  <div><%= form_tag sessions_path do %></div>
+  <div><%= label_tag "you sir, name?" %></div>
+  <div><%= text_field_tag :email, params[:email] %></div>
+  <div><%= label_tag "the password is" %></div>
+  <div><%= password_field_tag :password %></div>
+  <br>
+  <div class="enterbutton">
+    <button class="btn btn-warning btn-md" type="submit">enter neat</button>
+  </div>
+  <div><% end %></div>
+</div>

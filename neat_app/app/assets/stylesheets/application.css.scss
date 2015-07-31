@@ -18,7 +18,7 @@
 @import "bootstrap";
 
 body {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .logo a{
@@ -44,29 +44,38 @@ body {
 }
 
 .whiskeypic img{
-    // text-align: left;
-    padding: 15px 15px 15px 15px;
+    padding: 0px 15px 15px 15px;
     max-width:350px;
     max-height:450px;
-    // overflow:hidden;
 }
 
 .whiskeydesc {
-    text-align: right;
-    // margin-top: -300px;
-    margin-right: 50px;
-}
-
-.picanddesc {
-
-}
-
-.enterbutton {
-  text-align: right;
-  margin-right: 50px;
+    text-align :left;
+    margin-top: 35px;
 }
 
 .whiskeycomments {
-  text-align: right;
+    text-align: left;
+}
+
+.whiskeynewcomment {
+    margin-right: 300px;
+}
+
+.loginmod {
+  margin: auto;
+  width: 50%;
+}
+
+.welcome {
+  margin: auto;
+  width: 50%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.enterbutton {
+  text-align: left;
   margin-right: 50px;
 }
