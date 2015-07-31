@@ -6,7 +6,7 @@
 
     <div class="col-md-6">
       <div class="whiskeydesc">
-        <div>NAME: <%= @whiskey.name %></div>
+        <div class="whiskeyname"><%= @whiskey.name %></div>
         <div>REGION: <%= @whiskey.region %></div>
         <div>COUNTRY: <%= @whiskey.country %></div>
         <div>TYPE: <%= @whiskey.wtype %></div>
@@ -18,18 +18,16 @@
         <div>OWNER: <%= @whiskey.member.first_name %> <%= @whiskey.member.last_name %></div>
       </div>
         <br>
-        <br>
       <div class="whiskeycomments">
         <% @whiskey.comments.each do |x| %>
 
         <div>Member <%= x.member.first_name %> <%= x.member.last_name %> says:</div>
-        <div><%= x.comment %></div>
+        <div> <%= x.comment %></div>
+        <br>
         <% end %>
       </div>
 
       <div class="whiskeynewcomment pull-right">
-      <br>
-      <br>
         <%= form_for @comment, url: whiskey_path(@whiskey.id) do |f| %>
         <%= f.label "Add Your Comment" %>
         <br>

@@ -1,11 +1,16 @@
-<div class="" >
-  <div>ID: <%= @event.id %></div>
-  <div>DATE: <%= @event.date %></div>
+<div class="eventdetails" >
+
+  <div class="eventdate"><%= @event.date %></div>
   <div>HOST: <%= @event.host %></div>
   <div>THEME: <%= @event.theme %></div>
   <div>DESCRIPTION: <%= @event.description %></div>
-  <div>WHISKEYS: <%= @event.whiskeys.all %></div>
+  <br>
+  <div>WHISKEYS SAMPLED: </div>
 
-  
+  <div class="whiskeystried">
+    <% @event.whiskeys.each do |x| %>
+    <div><%= link_to "#{x.name}", whiskey_path(x) %></div>
+    <% end %>
+  </div>
 
 </div>
