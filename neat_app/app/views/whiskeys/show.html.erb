@@ -1,4 +1,5 @@
 
+<div class="picanddesc">
   <div class="whiskeypic" ><%= image_tag(@whiskey.pic1, :alt => "Photo Not Available") %></div>
 
     <div class="whiskeydesc" >
@@ -14,6 +15,7 @@
       <div>MEMBER: <%= @whiskey.member.first_name %> <%= @whiskey.member.last_name %></div>
     </div>
 
+</div>
 <!-- this section should show all comments from this whiskey id -->
     <div class="whiskeycomments">
       <%# @whiskey.comment.each do |x| %>
@@ -22,4 +24,9 @@
       <%# end %>
     </div>
 
+<div class="whiskeynewcomment">
+
+<div class="enterbutton"><button type="submit" class="btn btn-success btn-sm">Add A Comment</button></div>
+
+</div>
 <!-- this section will allow users to make new comments -->

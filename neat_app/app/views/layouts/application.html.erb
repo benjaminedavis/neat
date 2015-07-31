@@ -10,6 +10,7 @@
 
   <% if current_member %>
   <%= render "layouts/nav" %>
+  <%= link_to 'Logout', session_path(session), method: :delete%>
   <% end %>
 
 <%= yield %>

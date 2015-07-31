@@ -21,13 +21,13 @@ body {
   padding-top: 100px;
 }
 
-#logo {
+.logo {
     font-family: "Courier New", Courier, monospace;
     font-size: 65px;
     font-weight: bold;
     text-decoration: none;
     color: #F1C232;
-    margin-right:100px;
+    margin-right:120px;
 }
 
 .barnav {
@@ -36,4 +36,16 @@ body {
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
+}
+
+.whiskeypic {
+    text-align: left;
+}
+
+.whiskeydesc {
+    text-align: right;
+}
+
+.picanddesc {
+    height: 450px;
 }

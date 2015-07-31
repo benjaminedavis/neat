@@ -3,11 +3,11 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @member = Member.where(email: user_params[:email]).first
+    member = Member.find_by_email(params[:email])
 
-    if @member && @member.authenticate(user_params[:password])
-      session[:member_id] = @member.id
-      redirect_to root_path
+    if member && member.authenticate(params[:password])
+      session[:member_id] = member.id
+      redirect_to whiskeys_path
     else
       redirect_to new_session_path
     end
@@ -20,8 +20,8 @@ class SessionsController < ApplicationController
   end
 
 # private method - we don't want anyone else to be able to grab the method
-  private
-  def member_params
-    params.require(:member).permit(:email, :password)
-  end
+  # private
+  # def member_params
+  #   params.require(:member).permit(:member_id, :email, :password)
+  # end
 end
