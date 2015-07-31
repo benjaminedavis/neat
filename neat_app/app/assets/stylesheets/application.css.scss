@@ -40,12 +40,23 @@ body {
 
 .whiskeypic {
     text-align: left;
+    padding: 15px 15px 15px 15px;
+    width:350px;
+    height:450px;
+    overflow:hidden;
 }
 
 .whiskeydesc {
     text-align: right;
+    margin-top: -300px;
+    margin-right: 50px;
 }
 
 .picanddesc {
-    height: 450px;
+
+}
+
+.enterbutton {
+  text-align: right;
+  margin-right: 50px;
 }
