@@ -15,7 +15,7 @@
       <td><div><%= link_to "#{x.id}", member_path(x) %></div></td>
       <td><div><%= x.first_name %></div></td>
       <td><div><%= x.last_name %></div></td>
-      <td><div><%= x.email %></div></td>
+      <td><div><%= x.email :mailto%></div></td>
       <td><div><%= %></div></td>
     </tr>
     <% end %>
